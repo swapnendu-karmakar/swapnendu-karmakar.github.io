@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello World</title>
-  </head>
-  <body>
-    <h1>Hello There 😊</h1>
-    <h2>Myself, Swapnendu (swaps)</h2>
-    <div>
-    <a href="math/index.html">Math</a>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello, World</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="editor" id="editor" role="button" tabindex="0" aria-label="Run the program to print a new greeting">
+    <div class="titlebar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="filename">hello.js</span>
     </div>
-    <img src="static/myself.jpg" alt="swaps" width="500" height="600">
-  </body>
+
+    <div class="code">
+      <div class="line"><span class="ln">1</span><span><span class="k">function</span> <span class="f">greet</span><span class="p">() {</span></span></div>
+      <div class="line"><span class="ln">2</span><span>&nbsp;&nbsp;<span class="f">console</span><span class="p">.</span><span class="f">log</span><span class="p">(</span><span class="s" id="stringLit">"Hello, World"</span><span class="p">);</span></span></div>
+      <div class="line"><span class="ln">3</span><span><span class="p">}</span></span></div>
+      <div class="line"><span class="ln">4</span><span></span></div>
+      <div class="line"><span class="ln">5</span><span><span class="f">greet</span><span class="p">();</span></span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="terminal">
+      <p class="terminal-label">Output</p>
+      <div class="terminal-line">
+        <span class="prompt">&gt;</span>
+        <span class="output" id="output">Hello, World</span><span class="cursor"></span>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
 </html>
